@@ -1,8 +1,7 @@
 import axios from "axios";
 
 export const requests = axios.create({
-  baseURL:
-    process.env.NODE_ENV === "development" ? "/api/" : process.env.API_BASE_URL,
+  baseURL: "/api/",
   timeout: 10000,
   withCredentials: true,
   headers: {

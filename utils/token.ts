@@ -1,6 +1,6 @@
 import { sign, verify } from "jsonwebtoken";
 
-const jwtSecret = "CAIYUWANG";
+const jwtSecret = process.env.JWT_SECRET ?? "";
 const expiresIn = 60 * 30;
 
 export const generateToken = (staffId: string) => {
